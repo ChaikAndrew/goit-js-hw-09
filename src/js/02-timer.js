@@ -1,6 +1,6 @@
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
-import { Notify } from 'notiflix/build/notiflix-notify-aio';
+import Swal from 'sweetalert2'
 
 let selectedDate = null;
 let currentDate = null;
@@ -29,7 +29,7 @@ const options = {
       currentDate = options.defaultDate.getTime()
 if (currentDate > selectedDate) {
             buttonStart.disabled = true;
-  Notify.failure('Please choose a date in the future');
+  Swal.fire('Please choose a date in the future')
             return;
         } 
         buttonStart.disabled = false;
@@ -43,6 +43,7 @@ flatpickr(input, options);
 
 buttonStart.addEventListener('click', onStart);
 buttonStart.disabled = true;
+
 
 function onStart() {
   input.disabled = true;

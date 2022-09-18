@@ -20,11 +20,13 @@ img {
 #datetime-picker {
   font-family: 'Righteous', cursive;
   border-radius: 5px;
+  border-color: #cb4d4d;
 }
 
 .btn_start {
   font-family: 'Righteous', cursive;
   border-radius: 5px;
+  border-color: #cb4d4d;
 }
 .btn_start:hover,
 .btn_start:focus {
@@ -57,7 +59,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-image: linear-gradient(0deg, rgb(98, 88, 88) 0%, #444 100%);
+  background-image: linear-gradient(0deg, #7066e0 0%, #cb4d4d 100%);
   color: #fff;
   font-size: 26px;
   border-radius: 10px;
