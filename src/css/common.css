@@ -16,3 +16,59 @@ img {
   display: block;
   max-width: 100%;
 }
+
+#datetime-picker {
+  font-family: 'Righteous', cursive;
+  border-radius: 5px;
+}
+
+.btn_start {
+  font-family: 'Righteous', cursive;
+  border-radius: 5px;
+}
+.btn_start:hover,
+.btn_start:focus {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  font-family: 'Righteous', cursive;
+  position: relative;
+  background-color: #fafafa;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: linear-gradient(0deg, rgb(98, 88, 88) 0%, #444 100%);
+  color: #fff;
+  font-size: 26px;
+  border-radius: 10px;
+  margin: 0 4px;
+  min-width: 75px;
+  min-height: 85px;
+  z-index: 2;
+}
+.field span:nth-child(1) {
+  height: 33px;
+}
+.field span:nth-child(2) {
+  font-size: 16px;
+}
